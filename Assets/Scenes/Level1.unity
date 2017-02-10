@@ -118,6 +118,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac5a9090fc653549990508baaa0e880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsPerUnitTraveld: 1
+  gameSpeed: 10
+  titleScreenName: TitleScreen
+  previousScore: 0
 --- !u!4 &293508671
 Transform:
   m_ObjectHideFlags: 0

@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4027187738003526}
   - component: {fileID: 114766818957403790}
-  - component: {fileID: 114441005140700772}
   - component: {fileID: 114326694726802800}
   - component: {fileID: 114061379970263496}
+  - component: {fileID: 114707080190489686}
   m_Layer: 0
   m_Name: PillarParent
   m_TagString: Untagged
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ebed68f71d4b5744b0744d4bc5a9db8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyValue: -5
+  destroyValue: -20
 --- !u!114 &114326694726802800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -10
---- !u!114 &114441005140700772
+--- !u!114 &114707080190489686
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -161,11 +161,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1231587698359356}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d0dce0af589ed445a19659468678f86, type: 3}
+  m_Script: {fileID: 11500000, guid: c6a7da3caff8c2c4599e2becd82c771a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: -1}
-  speed: 10
 --- !u!114 &114766818957403790
 MonoBehaviour:
   m_ObjectHideFlags: 1

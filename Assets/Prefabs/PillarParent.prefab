@@ -20,6 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4027187738003526}
   - component: {fileID: 114766818957403790}
+  - component: {fileID: 114441005140700772}
+  - component: {fileID: 114326694726802800}
+  - component: {fileID: 114061379970263496}
   m_Layer: 0
   m_Name: PillarParent
   m_TagString: Untagged
@@ -39,9 +42,6 @@ GameObject:
   - component: {fileID: 136202713876118474}
   - component: {fileID: 23396576135271222}
   - component: {fileID: 54744304206078642}
-  - component: {fileID: 114477836726810846}
-  - component: {fileID: 114080609652077532}
-  - component: {fileID: 114847152727998930}
   m_Layer: 0
   m_Name: Pillar
   m_TagString: Untagged
@@ -71,7 +71,7 @@ Transform:
   m_GameObject: {fileID: 1288835341269226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 4027187738003526}
   m_RootOrder: 0
@@ -129,24 +129,36 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114080609652077532
+--- !u!114 &114061379970263496
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288835341269226}
+  m_GameObject: {fileID: 1231587698359356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ebed68f71d4b5744b0744d4bc5a9db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyValue: -5
+--- !u!114 &114326694726802800
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1231587698359356}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd9833a388eac6c4881fc1a85ae40ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -10
---- !u!114 &114477836726810846
+--- !u!114 &114441005140700772
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288835341269226}
+  m_GameObject: {fileID: 1231587698359356}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d0dce0af589ed445a19659468678f86, type: 3}
@@ -167,18 +179,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalScale: {x: 1, y: 10, z: 1}
   time: 1
---- !u!114 &114847152727998930
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288835341269226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ebed68f71d4b5744b0744d4bc5a9db8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyValue: -50
 --- !u!136 &136202713876118474
 CapsuleCollider:
   m_ObjectHideFlags: 1

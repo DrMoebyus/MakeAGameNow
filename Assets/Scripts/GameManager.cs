@@ -6,16 +6,17 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
 	public static GameManager Instance;
-
 	public float pointsPerUnitTraveld = 1.0f;
 	public float gameSpeed = 10.0f;
 
+	private static float highScore = 0.0f;
 	private float score = 0.0f;
 	private bool gameOver = false;
-	private static float highScore = 0.0f;
+	private bool hasSaved = false;
 
 	void Start () {
 		Instance = this;
+		LoadHighScore();
 	}
 
 	void Update () {
@@ -24,6 +25,10 @@ public class GameManager : MonoBehaviour {
 		}
 
 		if (gameOver)	{
+			if (!hasSaved) {
+				SaveHigheScore();
+				hasSaved = true;
+			}
 			if (Input.anyKeyDown) {
 				SceneManager.LoadScene("Level1");
 			}
@@ -36,6 +41,15 @@ public class GameManager : MonoBehaviour {
 					highScore = score;
 			}
 		}
+	}
+
+	void SaveHigheScore () {
+		PlayerPrefs.SetInt("HighScore", (int)highScore);
+		PlayerPrefs.Save();
+	}
+
+	void LoadHighScore () {
+		highScore = PlayerPrefs.GetInt("HighScore");
 	}
 
 	void OnGUI () {
